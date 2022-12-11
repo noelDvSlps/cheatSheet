@@ -103,8 +103,112 @@
         
         <a href="https://jason-brewer.medium.com/3-examples-of-when-not-to-use-javascript-arrow-functions-a41432c4e2c6"><h3>when not to use arrow functions</h3></a>
 
+        <h2>Strings</h2>
+        <h3>Template Strings</h3>
+        <div>const name = 'Alex';</div>
+        <div>skyscraper = false;</div>
+        <p>console.log(`${name} is the ${skyscraper ? 'tallest' : 'shortest'} person `)</p>
+        <h3>New string Method</h3>
+        <h4>.startsWith()</h4>
+        <div>const devs = 'Week1 iOS Academy'</div> 
+        <div>console.log(devs.startswith('iOS', 6) //returns true</div>
+        <h4>.endsWith()</h4>
+        <div>const acctNum = '123456789SAV-0001'</div> 
+        <div>console.log(devs.endswith('SAV', 12) //returns true</div>
+        <h4>.includes()</h4>
+        <div>const acctNum = '123456789SAV-0001'</div> 
+        <div>console.log(acctNum.includes('1') //returns true</div>
+        <h4>.repeat()</h4>
+        <div>constmyLetter = 'N'</div> 
+        <div>console.log(myLetter.repeat(5) //returns NNNNN</div><br>
+        <div>const academy ='Web';</div>
+        <div>const numWeeks = '16';</div>
+        <div>const exp = 'Beginner';</div>
+        <br>
+        <div>const padLeft = (str, pad = 12) => `${' '.repeat(pad-str.length)}${str}`</div>
+        <br>
+        <div>console.log(padleft(academy))</div>
+        <div>console.log(padleft(numWeeks))</div>
+        <div>console.log(padleft(exp))</div>
+
+        <h2>Destructuring Objects</h2>
+        <div>
+            <img src="./assets/images/destructure1.png" alt="destructure1">
+        </div>
+        <p>There is a better way to work on the data. Destructuring will solve it.</p>
+        <h3>Destructure Sample 1</h3>
+        <div>
+            <img src="./assets/images/destructure2.png" alt="destructure2">
+        </div>
+        <h3>Destructure Sample 2</h3>
+        <div>
+            We can rename the variable by using ':' <br>
+            <img src="./assets/images/destructure3.png" alt="destructure3">
+        </div>
+        <h3>Destructure Sample 3</h3>
+        <div>
+            Setting default value <br>
+            <img src="./assets/images/destructure4.png" alt="destructure4">
+        </div>
+        <h2>Destructuring Arrays</h2>
+        <h3>Destructure Array Sample 1</h3>
+        <div>
+            <img src="./assets/images/destructureArray1.png" alt="destructureArray1">
+        </div>
+        <h3>Destructure Array Sample 2</h3>
+        <div>
+            In this sample string was converted to array using split. <br>
+            <img src="./assets/images/destructureArray2.png" alt="destructureArray2">
+        </div>
+        <h3>Destructure Array Sample 3</h3>
+        <div>
+            In this sample we assigned variable on the first 2 students <br>
+            <img src="./assets/images/destructureArray3.png" 
+            alt="destructureArray3">
+        </div>
+        <h3>Destructure Array Sample 4</h3>
+        <div>
+            You can also assign variable on 'rest' variable since it is an array <br>
+            <img src="./assets/images/destructureArray4.png" 
+            alt="destructureArray4">
+        </div>
+        <h2>Swapping Variables</h2>
+        <img src="./assets/images/swapVar.png" 
+        alt="swap">
+        <h2>Destructuring Functions</h2>
+        <h3>Destructure Function Sample 1</h3>
+        <img src="./assets/images/destructureFunc1.png" 
+        alt="destructureFunc1">
+        <h3>Destructure Function Sample 2</h3>
+        <div>You can set default value (tax=0.25)</div>
+        <img src="./assets/images/destructureFunc2.png" 
+        alt="destructureFunc2">
+        <h2>Spread Operator</h2>
+        <h3>Spread Sample 1</h3>
+        <div>Combining</div>
+        <img src="./assets/images/spread1.png" 
+        alt="spread2">
+        <h3>Spread Sample 2</h3>
+        <div>Only shows nice comments</div>
+        <img src="./assets/images/spread2.png" 
+        alt="spread2">
+        <h2>Spreading into a function</h2>
+        <img src="./assets/images/spread3.png" 
+        alt="spread3">
+        <h2>...rest parameter in a function</h2>
+        <div>result:[6.25, 12.5, 28.75, 55, 108.75]</div>
+        <img src="./assets/images/rest1.png" 
+        alt="rest1">
+        <h2>Object Literal Upgrades</h2>
+        <img src="./assets/images/objLiteral1.png" 
+        alt="objLiteral1">
+        <div>if key name is same as variable name, we can get rid of it</div>
+        <img src="./assets/images/objLiteral2.png" 
+        alt="objLiteral2">
 
         
+        
+
       </div>
     </section>
   </body>
