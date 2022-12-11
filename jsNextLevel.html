@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cheat Sheet</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <nav id="topNav" class="navbar nav">
+      <!-- <button
+        class="navbar-toggler"
+        aria-expanded="false"
+        aria-controls="navbarDropdown"
+      >
+        <span>&#9776;</span>
+      </button> -->
+
+      <div class="container">
+        <a class="navbar-brand" href="">Cheat Sheet</a>
+        <ul class="navbar-nav">
+          <li class="nav-link"><a href="./index.html">Home</a></li>
+
+          <li class="nav-link"><a href="#">Blog</a></li>
+
+          <li class="nav-link">
+            <a href="#">Portfolio</a>
+          </li>
+
+          <li class="nav-link">
+            <a href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="NextLevelJS">
+      <div class="container">
+        <h2>Temporal Dead Zone</h2>
+        <p>
+          Temporal Dead Zone (TDZ) = trying to access a variable before it is
+          define.
+        </p>
+        <div>console.log(name);</div>
+        <div>var name = 'noel';</div>
+        <h2>When to use var, let and const</h2>
+        <ol>
+            <li> Use const by default.</li>
+            <li> Use let only if rebinding is needed.</li>
+            <li> var should not be used in ES6</li>
+        </ol>
+
+        <h2>Arrow Functions</h2>
+        <h3>Benefits of arrow function</h3>
+        <ol>
+            <li>Makes functions a lot more clearer and concise</li>
+            <li>It allows us to do implicit returns</li>
+            <li>It doesn't rebind the value of 'this' when we use arrow function inside a function</li>
+        </ol>
+        <h4>Sample 1</h4>
+        <p>
+            <h5>Use this:</h5> 
+            const sum = (a,b) => a + b; <br> <br>
+            <h5>instead of this:</h5> 
+            function sum(a,b){ <br>
+                return a+b; <br>
+            }
+        </p>
+
+        <h4>Sample 2</h4>
+        <p>
+            const pieEater = r => Math.PI * r * r; <br> <br>
+            You can ommit the parenthesis if there is only 1 parameter
+        </p>
+
+        <h4>Sample 3</h4>
+        <p>
+            const randomNumber = () => Math.random(); <br> <br>
+        </p>
+
+        <h4>Sample 4</h4>
+        <p>
+            const names = ['Noel'. 'Alex', 'Jhoana'] <br>
+            const fullNames = names.map((name) => name + ' Pulido';) <br><br>
+            console.log(fullNames); <br><br>
+            Result: ['Noel Pulido', 'Alex Pulido', 'Jhoana Pulido']
+        </p>
+
+        <h3>Arrow functions and 'this'</h3>
+        <p>
+            const guitarDude = { <br>
+                name: 'Noel', <br>
+                fav: 'Blues', <br>
+                doFav() { <br>
+                console.log('Doing the ' + <i>this</i> .fav); <br>
+                const forDays = () => {
+                    console.log('I could do ' + <i>this.fav</i> + ' for days' )
+                }
+                forDays();
+             }
+        </p>
+        
+        <a href="https://jason-brewer.medium.com/3-examples-of-when-not-to-use-javascript-arrow-functions-a41432c4e2c6"><h3>when not to use arrow functions</h3></a>
+
+
+        
+      </div>
+    </section>
+  </body>
+</html>
